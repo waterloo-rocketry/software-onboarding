@@ -86,7 +86,9 @@ inside this directory to complete the installation process:
 pip install -U -r requirements.txt
 pip install -U -e .
 ```
-If you're using a Mac, run these commands instead:
+If you're using an environment where Python 2 is the system Python
+(MacOS and some Linux distributions), run these commands instead to
+ensure the packages are installed for Python 3:
 ```
 pip3 install -U -r requirements.txt
 pip3 install -U -e .
