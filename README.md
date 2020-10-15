@@ -40,16 +40,21 @@ There are a lot of good resources available for learning Git. You might
 find the following helpful:
 - If you like learning interactively, try [Git-It](https://github.com/jlord/git-it-electron).
 This interactive tutorial will take you through Git and GitHub basics;
-it will teach you everything you need to know for parts I, IV, and V of
-this tutorial.
+it will teach you everything you need to know for parts
+[I](#part-i-let's-git-started), [IV](#part-iv-commitment-issues), and
+[V](#part-v-pulling-a-fast-one) of this tutorial.
+- Another interactive option is [Learn Git Branching](https://learngitbranching.js.org).
+It's not as comprehensive as Git-It, but it runs in your browser and
+might be easier to get started with.
 - If you're a bit more adventurous, you can refer directly to the Git
 documentation. Chapter [1.5](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 will show you how to install Git, and Chapter [2.1](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 has information on how to "clone" an existing repository.
 
 You'll also need to create a GitHub account and add it to the Waterloo
-Rocketry GitHub organization. Send your GitHub username to us once
-you've created it and we'll make sure you get added!
+Rocketry GitHub organization. Send your GitHub username to us (Wendi,
+Jacob, or Dawson) once you've created it and we'll make sure you get
+added!
 
 Move to Part II once:
 - You have Git installed
@@ -71,12 +76,20 @@ all of our different projects.
 In most cases, working on a Python project means installing dependencies
 using `pip`. Pip is a tool for installing Python packages - software
 libraries that other people have written and made available for you to
-use. For `sandbox`, we only have one dependency: `pytest`, the tool we
-use to test the code. Run these two commands to complete the
-installation process:
+use. Pip already comes pre-installed with Python, so you don't need to
+install anything extra.
+
+For `sandbox`, we only have one dependency: `pytest`, the tool we
+use to test the code. Run these two commands in your terminal while
+inside this directory to complete the installation process:
 ```
 pip install -U -r requirements.txt
 pip install -U -e .
+```
+If you're using a Mac, run these commands instead:
+```
+pip3 install -U -r requirements.txt
+pip3 install -U -e .
 ```
 The first line installs all of the libraries from the `requirements.txt`
 file; you can open that file and take a look to see what is being
@@ -91,11 +104,12 @@ code does what it's supposed to do. For example, a unit test for the
 `10`. The `sandbox` unit tests can be found in the
 `sandbox/tests/test_sandbox.py` file.
 
-For now, start by running the `pytest` command. You should see pytest
-automatically detect and run all of the unit tests in the repository,
-and they should all pass. If any of them fail, something is very wrong
-and should be addressed before moving on - try troubleshooting yourself,
-but let us know if you're not sure what the issue is.
+For now, start by running the `pytest` command in your terminal. You
+should see pytest automatically detect and run all of the unit tests in
+the repository, and they should all pass. If any of them fail, something
+is very wrong and should be addressed before moving on - try
+troubleshooting yourself, but let us know if you're not sure what the
+issue is.
 
 Move to Part III once:
 - You have Python installed
@@ -111,10 +125,17 @@ feature.
 It's time to actually write some code! Start by adding a new function to
 `sandbox.py`. You can take inspiration from the functions that are
 already there, or get creative. Just make sure your function will be
-easily unit-testable - it has well-defined inputs and outputs.
+easily unit-testable (it should have well-defined inputs and outputs).
+Please also add a [docstring](https://www.datacamp.com/community/tutorials/docstrings-python)
+to your function; this is a comment that provides useful information
+about what your function does, what arguments it takes, and what values
+it returns. All of the functions in `sandbox.py` should already have
+docstrings, so you should be able to just follow the existing format.
 
 Next, write a unit test for your new function and add it to
 `test_sandbox.py`. Again, follow the examples that are already there.
+Make sure that your function name starts with `test_`, or pytest won't
+be able to detect it!
 
 Finally, run the unit tests with `pytest` and make sure that your new
 test both runs and passes. If it fails or doesn't run, you've done
@@ -159,11 +180,24 @@ Move to Part V once:
 repository.
 
 By committing your change, you've stored it in the local history of the
-repository, but you haven't yet merged it into `master`. In order to
-merge your changes, you'll open what's known as a _pull request_ (PR),
-which is a way of proposing new changes for merging. Again, if you've
-gone through the Git-It tutorials, you already know how to open a PR;
-otherwise, you can follow the GitHub tutorial [here](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+repository on your feature branch, but you haven't yet uploaded the
+change to GitHub or merged it to the `master` branch.
+
+The first step is to _push_ a copy of your local branch up to GitHub.
+You can do this very easily by running the following command, replacing
+`branch_name` with the actual name of your branch:
+```
+git push -u origin branch_name
+```
+If you want to read more about Git pushing, checkout out Chapter
+[3.5](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) of
+the Git book.
+
+Now that GitHub has a copy of your branch, you can open a _pull request_
+(PR), which is a way of proposing new changes for merging. Again, if
+you've gone through the Git-It tutorials, you already know how to open a
+PR; otherwise, you can follow the GitHub tutorial
+[here](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 Once you've opened the PR, [request a review](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
 from `OnboardingReviewers`. We'll take a look at the PR and let you know
@@ -176,3 +210,11 @@ request
 - You've had your pull request reviewed and have addressed any review
 comments
 - You've merged your pull request into the `master` branch
+
+## What Now?
+
+Once you've merged your pull request, you're officially done with
+software onboarding! Whenever you're ready to get started, take a look
+at our [good first issues](https://github.com/issues?q=is%3Aissue+user%3Awaterloo-rocketry+is%3Aopen+no%3Aassignee+label%3A"good+first+issue")
+and let the software leads know that you're looking for work. Welcome to
+the team!
