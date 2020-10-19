@@ -1,5 +1,7 @@
 # Waterloo Rocketry Software Onboarding
 
+[![](https://github.com/waterloo-rocketry/software-onboarding/workflows/Run%20Unit%20Tests/badge.svg)](https://github.com/waterloo-rocketry/software-onboarding/actions?query=workflow%3A%22Run+Unit+Tests%22)
+
 Welcome to the Waterloo Rocketry Software Subteam!
 
 This repository is intended to be a starting point for new team members
