@@ -141,6 +141,13 @@ Next, write a unit test for your new function and add it to
 Make sure that your function name starts with `test_`, or pytest won't
 be able to detect it!
 
+This repository has an automatic formatting script, located in the
+`tools` folder. It uses autopep8 to deal with nitpicky formatting things
+like extra newlines and whitespace floating around. To use it, run
+`./tools/format.sh` from the root of the repository - you'll generally
+want to do this before each commit, or at least before making pull
+requests.
+
 Finally, run the unit tests with `pytest` and make sure that your new
 test both runs and passes. If it fails or doesn't run, you've done
 something wrong; take another look at the code and try to troubleshoot.
