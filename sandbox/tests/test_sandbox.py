@@ -8,4 +8,3 @@ def test_add_one():
 def test_add_two():
     val = 1
     assert sb.add_two(val) == 3
-    

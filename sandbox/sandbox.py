@@ -27,4 +27,3 @@ def add_two(val):
     The number plus two.
     """
     return val + 2
-    
