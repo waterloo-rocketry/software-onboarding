@@ -27,3 +27,19 @@ def add_two(val):
     The number plus two.
     """
     return val + 2
+
+def multiply_by_two(val):
+    """
+    Multiply a number by two.
+
+    Paramters
+    ---------
+    val: number
+        The number which is being double.
+
+    Returns
+    -------
+    The number times two.
+    """
+    return val * 2
+
