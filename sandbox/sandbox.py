@@ -27,3 +27,9 @@ def add_two(val):
     The number plus two.
     """
     return val + 2
+
+def add_exclamation(string):
+	"""
+	Takes a string and adds an exclamation mark.
+	"""
+	return string + "!"
