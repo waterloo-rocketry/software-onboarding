@@ -235,13 +235,11 @@ the team!
 
 ### Windows Users
 
-The formatting script in this repository is written in bash. Unfortunately, 
-Windows is derived from DOS while Linux and Mac are derived from UNIX, this means
-there are some incompatibilities. Namely, you cant run bash (`.sh`) scripts on native Windows.
+The formatting script in this repository is written for Bash. Unfortunately, Windows diverges from Linux and Mac in standard shell syntax and tools/programs, this leads to incompatibilities. Ultimately, you can't run Bash (`.sh`) scripts directly using CMD or Powershell, you need an extra tool.
 
 There are a couple ways to work around this issue.
-1. **Easy:** Use Git bash! If you have Git already set up on your computer from the first step, (unless you disabled it) you should already have git bash installed. 
-    This is a straightforward bash terminal that supports a wide range of Unix style commands and programs. To open a git bash terminal, search for "Git bash" in the start menu. Once started, switch to the repo's directory and refer back to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change).
+1. **Easy:** Use Git Bash! If you have Git set up on your computer from the first step, you should already have Git Bash installed (unless you disabled it). 
+    This is a straightforward Bash shell that supports a wide range of Unix style commands and programs. To open a Git Bash terminal, search for "Git Bash" in the start menu. Once started, switch to the repo's directory and refer back to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change).
 
-2. **Hard:** Install WSL (windows subsystem for linux). This essentially runs a linux kernel inside windows and allows running full programs in Debian, Ubuntu, Fedora, etc.
-    If you dont have a reason to use WSL1, install WSL2 as it is more up to data with better features. Refer to the [Microsoft Install Instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10). After having installed WSL and your Linux distro of choice, open the repo folder in cmd or powershell and enter `wsl`. This will put you in a linux command terminal. Then, refer to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change). You will likely need to install python dependacies since the linux environement is separate from windows.
+2. **Hard:** Install WSL (Windows Subsystem for Linux). This effectively runs a Linux kernel inside Windows and allows running full programs in Debian, Ubuntu, Fedora, etc.
+    If you don't have a reason to use WSL1, install WSL2 as it is more up to data and has more features. Refer to the [Microsoft Install Instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10). After having installed WSL and your Linux distro of choice (Ubuntu 20.04 recommended), open the repo folder in CMD or Powershell and enter `wsl`. This will put you in a Linux command shell. Then, refer to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change). You will likely need to install Python dependacies since the Linux environement is separate from Windows.
