@@ -146,7 +146,7 @@ This repository has an automatic formatting script, located in the
 like extra newlines and whitespace floating around. To use it, run
 `./tools/format.sh` from the root of the repository - you'll generally
 want to do this before each commit, or at least before making pull
-requests.
+requests. (_For Windows, refer to the [note in the appendix](#windows-users)_)
 
 Finally, run the unit tests with `pytest` and make sure that your new
 test both runs and passes. If it fails or doesn't run, you've done
@@ -229,3 +229,19 @@ software onboarding! Whenever you're ready to get started, take a look
 at our [good first issues](https://github.com/issues?q=is%3Aissue+user%3Awaterloo-rocketry+is%3Aopen+no%3Aassignee+label%3A"good+first+issue")
 and let the software leads know that you're looking for work. Welcome to
 the team!
+
+
+## Appendix
+
+### Windows Users
+
+The formatting script in this repository is written in bash. Unfortunately, 
+Windows is derived from DOS while Linux and Mac are derived from UNIX, this means
+there are some incompatibilities. Namely, you cant run bash (`.sh`) scripts on native Windows.
+
+There are a couple ways to work around this issue.
+1. Install WSL (windows subsystem for linux). This essentially runs a linux kernel inside windows and allows running full programs in Debian, Ubuntu, Fedora, etc.
+    If you dont have a reason to use WSL1, install WSL2 as it is more up to data with better features. Refer to the [Microsoft Install Instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10). After having installed WSL and your Linux distro of choice, open the repo folder in cmd or powershell and enter `wsl`. This will put you in a linux command terminal. Then, refer to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change). You will likely need to install python dependacies since the linux environement is separate from windows.
+
+2. Install CYGWIN. CYGWIN interprets linux/unix programs to run natively on windows. This means that programs require a recompile, 
+    leading to complication and a lot of hair pulling. WSL was functionally the replacement for CYGWIN, so use WSL unless you have a reason not to.
