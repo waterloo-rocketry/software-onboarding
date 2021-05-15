@@ -32,18 +32,18 @@ def add_two(val):
 
 def fibonacci_by_index(index: int):
     """
-    Get the value at the index of the fibonacci series.
+    Get the value at the index of the Fibonacci series.
 
     Austin W. Milne @awbmilne  <austin.milne@uwaterloo.ca>
 
     Parameters
     ----------
     index: number
-        The index of the fibonacci series to return.
+        The index of the Fibonacci series to return.
 
     Returns
     -------
-    The value from the fibonnacci series at the given index.
+    The value from the Fibonnacci series at the given index.
     """
     if (index < 0):
         raise IndexError("Invalid Fibonacci Index")

@@ -12,7 +12,7 @@ def test_add_two():
 
 
 def test_fibonnaci_by_index():
-    indexs = (0, 1, 2, 3, 19, 35, 74, 100)
+    indices = (0, 1, 2, 3, 19, 35, 74, 100)
     values = (0, 1, 1, 2, 4181, 9227465, 1304969544928657, 354224848179261915075)
-    for index, val in zip(indexs, values):
+    for index, val in zip(indices, values):
         assert sb.fibonacci_by_index(index) == val
