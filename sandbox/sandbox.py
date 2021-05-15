@@ -43,18 +43,15 @@ def fibonacci_by_index(index: int):
 
     Returns
     -------
-    The value from the Fibonnacci series at the given index.
+    The value from the Fibonacci series at the given index.
     """
     if (index < 0):
         raise IndexError("Invalid Fibonacci Index")
-        return -1
-    if (index == 0):
-        return 0
     else:
-        im2 = 0  # Value of at index i-2
-        im1 = 1  # Value of at index i-1
-        for count in range(index-1):
-            i = im2 + im1  # Sum the previous 2 numbers
-            im2 = im1     # Move i-1 to i-2
-            im1 = i       # Move i to i-1
-        return im1  # Return the latest i (now in i-1)
+        i = 0    # Value at index i
+        ip1 = 1  # Value at index i+1
+        for count in range(index):
+            ip2 = i + ip1  # i+2 is the sum of i and i+1
+            i = ip1        # Move i+1 to i
+            ip1 = ip2      # Move i+2 to i+1
+        return i # Return i
