@@ -55,3 +55,19 @@ def fibonacci_by_index(index: int):
             i = ip1        # Move i+1 to i
             ip1 = ip2      # Move i+2 to i+1
         return i # Return i
+
+ 
+def multiply_by_two(val):
+    """
+    Multiply a number by two.
+
+    Paramters
+    ---------
+    val: number
+        The number which is being double.
+
+    Returns
+    -------
+    The number times two.
+    """
+    return val * 2
