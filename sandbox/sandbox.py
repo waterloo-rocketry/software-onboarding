@@ -13,6 +13,7 @@ def add_one(val):
     """
     return val + 1
 
+
 def add_two(val):
     """
     Add 2 to a number.
@@ -28,6 +29,34 @@ def add_two(val):
     """
     return val + 2
 
+
+def fibonacci_by_index(index: int):
+    """
+    Get the value at the index of the Fibonacci series.
+
+    Austin W. Milne @awbmilne  <austin.milne@uwaterloo.ca>
+
+    Parameters
+    ----------
+    index: number
+        The index of the Fibonacci series to return.
+
+    Returns
+    -------
+    The value from the Fibonacci series at the given index.
+    """
+    if (index < 0):
+        raise IndexError("Invalid Fibonacci Index")
+    else:
+        i = 0    # Value at index i
+        ip1 = 1  # Value at index i+1
+        for count in range(index):
+            ip2 = i + ip1  # i+2 is the sum of i and i+1
+            i = ip1        # Move i+1 to i
+            ip1 = ip2      # Move i+2 to i+1
+        return i # Return i
+
+ 
 def multiply_by_two(val):
     """
     Multiply a number by two.
@@ -42,4 +71,3 @@ def multiply_by_two(val):
     The number times two.
     """
     return val * 2
-
