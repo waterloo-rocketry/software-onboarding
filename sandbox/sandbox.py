@@ -72,7 +72,7 @@ def multiply_by_two(val):
     """
     return val * 2
 
-def lucas_by_pos_index(index: int):
+def lucas_by_pos_index(n):
     """
     Get the value at the index of the Lucas series.
 
@@ -85,13 +85,18 @@ def lucas_by_pos_index(index: int):
     -------
     The value from the Lucas series at the given index.
     """
-    if (index < 0):
-        raise IndexError("Function only accepts positive index for Lucas series")
-    else:
-        i = 2    # Value at index i
-        ip1 = 1  # Value at index i+1
-        for count in range(index):
-            ip2 = i + ip1  # i+2 is the sum of i and i+1
-            i = ip1        # Move i+1 to i
-            ip1 = ip2      # Move i+2 to i+1
-        return i # Return i
+    # declaring base values
+    # for positions 0 and 1
+    a = 2
+    b = 1
+
+    if (n == 0):
+        return a
+
+    # generating number
+    for i in range(2, n + 1):
+        c = a + b
+        a = b
+        b = c
+
+    return b
