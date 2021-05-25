@@ -19,3 +19,9 @@ def test_fibonnaci_by_index():
 def test_multiply_by_two():
     val = 1
     assert sb.multiply_by_two(val) == 2
+
+def test_lucas_by_pos_index():
+    indices = (0, 1, 2, 3, 4, 5, 6)
+    values = (2,1,3,4,7,11)
+    for index, val in zip(indices, values):
+        assert sb.lucas_by_pos_index(index) == val

@@ -71,3 +71,27 @@ def multiply_by_two(val):
     The number times two.
     """
     return val * 2
+
+def lucas_by_pos_index(index: int):
+    """
+    Get the value at the index of the Lucas series.
+
+    Parameters
+    ----------
+    index: number
+        The index of the Fibonacci series to return.
+
+    Returns
+    -------
+    The value from the Lucas series at the given index.
+    """
+    if (index < 0):
+        raise IndexError("Function only accepts positive index for Lucas series")
+    else:
+        i = 2    # Value at index i
+        ip1 = 1  # Value at index i+1
+        for count in range(index):
+            ip2 = i + ip1  # i+2 is the sum of i and i+1
+            i = ip1        # Move i+1 to i
+            ip1 = ip2      # Move i+2 to i+1
+        return i # Return i
