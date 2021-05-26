@@ -54,9 +54,9 @@ def fibonacci_by_index(index: int):
             ip2 = i + ip1  # i+2 is the sum of i and i+1
             i = ip1        # Move i+1 to i
             ip1 = ip2      # Move i+2 to i+1
-        return i # Return i
+        return i  # Return i
 
- 
+
 def multiply_by_two(val):
     """
     Multiply a number by two.
@@ -71,3 +71,19 @@ def multiply_by_two(val):
     The number times two.
     """
     return val * 2
+
+
+def subtract_one(val):
+    """
+    Subtract one from a number.
+
+    Paramters
+    ---------
+    val: number
+        The number which is being subtracted from.
+
+    Returns
+    -------
+    The number subtract one.
+    """
+    return val - 1
