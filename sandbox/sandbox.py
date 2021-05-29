@@ -87,3 +87,21 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+def create_array(m, n):
+    import numpy as np
+    """
+    Shirley
+    Create an array of zeros
+
+    Parameters
+    --------
+    m: the number of rows in the array
+    n: the number of columns in the array
+
+    Returns
+    --------
+    An mxn array of zeros
+    """
+    array=np.zeros(m,n)
+    return array
