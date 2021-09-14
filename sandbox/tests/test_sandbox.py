@@ -26,3 +26,8 @@ def test_multiply_by_two():
 def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
+
+
+def test_number_to_string():
+    val = 123
+    assert sb.number_to_string(val) == "123"

@@ -87,3 +87,23 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+
+def number_to_string(val):
+    """
+    Convert a number to a string representation of the number.
+
+    Paramters
+    ---------
+    val: number
+        The number (integer, float, etc.) to be turned into a string.
+
+    Returns
+    -------
+    String value of the number.
+    """
+
+    if(type(val) == str):
+        return "The input is already a string"
+    else:
+        return str(val)
