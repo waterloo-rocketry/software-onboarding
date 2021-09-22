@@ -26,3 +26,10 @@ def test_multiply_by_two():
 def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
+
+
+def test_triple_add_one():
+    inputs = (0, 1, 2, -1, 10)
+    expecteds = (1, 4, 7, -2, 31)
+    for val, exp in zip(inputs, expecteds):
+        assert sb.triple_add_one(val) == exp

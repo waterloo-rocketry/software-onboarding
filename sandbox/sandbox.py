@@ -87,3 +87,18 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+
+def triple_add_one(val):
+    """
+    Triple a number and then add one
+
+    Parameters
+    ----------
+    val: number
+        The number which is being tripled and then incremented.
+    Returns
+    -------
+    The number multiplied by 3, plus 1.
+    """
+    return 3 * val + 1
