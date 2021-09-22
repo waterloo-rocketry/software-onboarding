@@ -87,3 +87,20 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+
+def is_even(val):
+    """
+    Checks if the input number is even
+
+    Parameters
+    ---------
+    val: number
+        The number that is being checked
+
+    Returns
+    -------
+    The number mod 2
+    """
+    
+    return val%2
