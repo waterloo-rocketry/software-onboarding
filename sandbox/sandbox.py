@@ -88,7 +88,7 @@ def subtract_one(val):
     """
     return val - 1
 
-def even_odd_test(val):
+def even_odd_check(val):
     """
     Tests if number is even or odd.
 
