@@ -61,7 +61,7 @@ def multiply_by_two(val):
     """
     Multiply a number by two.
 
-    Paramters
+    Parameters
     ---------
     val: number
         The number which is being double.
@@ -77,7 +77,7 @@ def subtract_one(val):
     """
     Subtract one from a number.
 
-    Paramters
+    Parameters
     ---------
     val: number
         The number which is being subtracted from.
@@ -87,3 +87,22 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+def even_odd_test(val):
+    """
+    Tests if number is even or odd.
+
+    Parameters
+    ----------
+    val:number
+        The number being tested.
+
+    Returns
+    -------
+        A string stating "Odd" or "Even".
+    """
+    if (val%2 == 0):
+        return "Even"
+    else:
+        return "Odd"
+
