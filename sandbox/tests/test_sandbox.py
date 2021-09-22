@@ -27,6 +27,6 @@ def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
 
-def test_even_odd_check():
-    val = 2
-    assert sb.even_odd_check(val) == "Even"
+def test_percentage_conversion():
+    val = 0.9432
+    assert sb.percentage_conversion(val) == "94.32%"

@@ -88,21 +88,18 @@ def subtract_one(val):
     """
     return val - 1
 
-def even_odd_check(val):
+def percentage_conversion(val):
     """
-    Tests if number is even or odd.
+    Converts a decimal between 0 and 1 to a percentage with 2 decimal places.
 
     Parameters
     ----------
     val:number
-        The number being tested.
+        The number being converted.
 
     Returns
     -------
-        A string stating "Odd" or "Even".
+        A percentage.
     """
-    if (val%2 == 0):
-        return "Even"
-    else:
-        return "Odd"
+    return str(round(val*100,2))+"%"
 
