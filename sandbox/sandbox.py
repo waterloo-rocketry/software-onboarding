@@ -87,3 +87,18 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+def divide_by_n(dividend, divisor):
+    """
+    Divides two given numbers,
+
+    Parameters
+    -------
+    i) dividend
+    ii) divisor
+
+    Returns
+    -------
+    The quotient of two numbers.
+    """
+    return dividend / divisor
