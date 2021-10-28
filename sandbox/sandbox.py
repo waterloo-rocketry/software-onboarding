@@ -88,6 +88,7 @@ def subtract_one(val):
     """
     return val - 1
 
+
 def divide_by_n(dividend, divisor):
     """
     Divides two given numbers,
