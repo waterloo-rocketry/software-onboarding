@@ -87,3 +87,18 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+def square(val):
+    """
+    Square a number.
+    
+    Paramters 
+    ---------
+    val: number
+        The number which is being squared
+        
+    Returns
+    -------
+    The number squared
+    """
+    return val ** 2
