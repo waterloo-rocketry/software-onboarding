@@ -86,4 +86,19 @@ def subtract_one(val):
     -------
     The number subtract one.
     """
-    return val - 1
+    return val - 1  
+
+def multiply_by_eight(val):
+    """
+    Multiply a number by eight.
+
+    Paramters 
+    ---------
+    val: number
+        The number which is being multiplied by eight.
+
+    Returns
+    -------
+    The number times eight.
+    """
+    return val * 8
