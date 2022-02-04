@@ -102,3 +102,4 @@ def square(val):
     The number squared
     """
     return val ** 2
+    
