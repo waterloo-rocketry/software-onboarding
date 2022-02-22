@@ -26,3 +26,9 @@ def test_multiply_by_two():
 def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
+
+def test_multiply_by_two_twice():
+    val = 2
+    assert sb.multiply_by_two(sb.multiply_by_two(val)) == 8
+
+    
