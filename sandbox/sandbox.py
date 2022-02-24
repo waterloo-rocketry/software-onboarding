@@ -87,3 +87,18 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+def divide_by_two(val):
+    """
+    Perform floor division of a number.
+
+    Paramters
+    ---------
+    val: number
+        The number which is being divided by 2.
+
+    Returns
+    -------
+    The number divided by 2.
+    """
+    return val//2

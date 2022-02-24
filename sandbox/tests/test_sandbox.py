@@ -26,3 +26,8 @@ def test_multiply_by_two():
 def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
+
+
+def test_divide_by_two():
+    val = 10
+    assert sb.divide_by_two(val) == 5
