@@ -18,6 +18,11 @@ def test_fibonnaci_by_index():
         assert sb.fibonacci_by_index(index) == val
 
 
+def test_factorial():
+    integer = 5
+    assert sb.factorial(integer) == 120
+
+
 def test_multiply_by_two():
     val = 1
     assert sb.multiply_by_two(val) == 2

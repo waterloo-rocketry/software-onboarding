@@ -73,6 +73,24 @@ def multiply_by_two(val):
     return val * 2
 
 
+def factorial(integer):
+    """
+    Return the factorial of a position integer.
+
+    Parameters
+    ----------
+    integer: an integer
+
+    Returns
+    -------
+    the value of the factorial 
+    """
+    if integer == 0:
+        return 1
+    else:
+        return integer * factorial(integer-1)
+
+
 def subtract_one(val):
     """
     Subtract one from a number.
