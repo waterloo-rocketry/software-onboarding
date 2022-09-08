@@ -31,3 +31,9 @@ def test_multiply_by_two():
 def test_subtract_one():
     val = 1
     assert sb.subtract_one(val) == 0
+
+
+def test_area_of_rect():
+    length = 3
+    width = 2
+    assert sb.area_of_rect(length, width) == 6
