@@ -146,7 +146,7 @@ This repository has an automatic formatting script, located in the
 like extra newlines and whitespace floating around. To use it, run
 `./tools/format.sh` from the root of the repository - you'll generally
 want to do this before each commit, or at least before making pull
-requests.
+requests. (_For Windows, refer to the [note in the appendix](#windows-users)_)
 
 Finally, run the unit tests with `pytest` and make sure that your new
 test both runs and passes. If it fails or doesn't run, you've done
@@ -229,3 +229,17 @@ software onboarding! Whenever you're ready to get started, take a look
 at our [good first issues](https://github.com/issues?q=is%3Aissue+user%3Awaterloo-rocketry+is%3Aopen+no%3Aassignee+label%3A"good+first+issue")
 and let the software leads know that you're looking for work. Welcome to
 the team!
+
+
+## Appendix
+
+### Windows Users
+
+The formatting script in this repository is written for Bash. Unfortunately, Windows diverges from Linux and Mac in standard shell syntax and tools/programs, this leads to incompatibilities. Ultimately, you can't run Bash (`.sh`) scripts directly using CMD or Powershell, you need an extra tool.
+
+There are a couple ways to work around this issue.
+1. **Easy:** Use Git Bash! If you have Git set up on your computer from the first step, you should already have Git Bash installed (unless you disabled it). 
+    This is a straightforward Bash shell that supports a wide range of Unix style commands and programs. To open a Git Bash terminal, search for "Git Bash" in the start menu. Once started, switch to the repo's directory and refer back to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change).
+
+2. **Hard:** Install WSL (Windows Subsystem for Linux). This effectively runs a Linux kernel inside Windows and allows running full programs in Debian, Ubuntu, Fedora, etc.
+    If you don't have a reason to use WSL1, install WSL2 as it is more up to data and has more features. Refer to the [Microsoft Install Instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10). After having installed WSL and your Linux distro of choice (Ubuntu 20.04 recommended), open the repo folder in CMD or Powershell and enter `wsl`. This will put you in a Linux command shell. Then, refer to the formatting instructions under [Part III: Making a Change](#part-iii-making-a-change). You will likely need to install Python dependacies since the Linux environement is separate from Windows.
