@@ -105,3 +105,21 @@ def subtract_one(val):
     The number subtract one.
     """
     return val - 1
+
+
+def area_of_rect(length, width):
+    """
+    Calculates the area of a rectangle.
+
+    Paramters
+    ---------
+    length: number
+        The length of the rectangle.
+    width: number
+        The width of the rectangle.
+
+    Returns
+    -------
+    The area of the rectangle.
+    """
+    return length * width
