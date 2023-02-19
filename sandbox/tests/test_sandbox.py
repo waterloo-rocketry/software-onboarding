@@ -37,3 +37,8 @@ def test_area_of_rect():
     length = 3
     width = 2
     assert sb.area_of_rect(length, width) == 6
+
+
+def test_single_number():
+    integers = [4, 1, 2, 1, 2]
+    assert sb.single_number(integers) == 4
