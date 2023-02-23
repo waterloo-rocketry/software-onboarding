@@ -61,8 +61,8 @@ def multiply_by_two(val):
     """
     Multiply a number by two.
 
-    Paramters
-    ---------
+    Parameters
+    ----------
     val: number
         The number which is being double.
 
@@ -95,8 +95,8 @@ def subtract_one(val):
     """
     Subtract one from a number.
 
-    Paramters
-    ---------
+    Parameters
+    ----------
     val: number
         The number which is being subtracted from.
 
@@ -111,8 +111,8 @@ def area_of_rect(length, width):
     """
     Calculates the area of a rectangle.
 
-    Paramters
-    ---------
+    Parameters
+    ----------
     length: number
         The length of the rectangle.
     width: number
@@ -123,3 +123,27 @@ def area_of_rect(length, width):
     The area of the rectangle.
     """
     return length * width
+
+
+def single_number(integers):
+    """
+    Given a non-empty array of integers, every element
+    appears twice except for one. This function finds
+    that single one.
+
+    Parameters
+    ----------
+    integers: array
+        Non-empty array of integers
+
+    Returns
+    -------
+    Single integer
+    """
+
+    single = 0
+
+    for num in integers:
+        single ^= num
+
+    return single
