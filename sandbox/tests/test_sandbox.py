@@ -1,4 +1,5 @@
 import sandbox as sb
+import math
 
 
 def test_add_one():
@@ -42,3 +43,8 @@ def test_area_of_rect():
 def test_single_number():
     integers = [4, 1, 2, 1, 2]
     assert sb.single_number(integers) == 4
+
+
+def test_ceil_sqrt():
+    integer = 69420
+    # assert math.ceil(math.sqrt(integer)) == sb.ceil_sqrt(integer)
