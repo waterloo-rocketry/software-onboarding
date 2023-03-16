@@ -83,7 +83,7 @@ def factorial(integer):
 
     Returns
     -------
-    the value of the factorial 
+    the value of the factorial
     """
     if integer == 0:
         return 1
@@ -147,3 +147,27 @@ def single_number(integers):
         single ^= num
 
     return single
+
+
+def ceil_sqrt(x: int) -> int:
+    """
+    Given a non-negative integer, attempts to find the
+    the square root of the integer, rounded up.
+    Equivalent to ceiling(square_root(x))
+
+    Parameters
+    ----------
+    x: non-negative integer
+        Non-negative integer you want to sqrt
+
+    Returns
+    -------
+    ceil(sqrt(x)): non-negative integer
+    """
+
+    i = 0
+
+    while (i**2 < x):
+        i += 1
+
+    return i
