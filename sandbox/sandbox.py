@@ -171,3 +171,20 @@ def ceil_sqrt(x: int) -> int:
         i += 1
 
     return i
+
+
+def double_string(x: str) -> str:
+    """
+    Given a string, returns the string appended
+    to itself. Equivalent to string + string.
+
+    Parameters
+    ----------
+    x: string
+        String that you want to double
+
+    Returns
+    -------
+    The original string appended to itself
+    """
+    return x + x
