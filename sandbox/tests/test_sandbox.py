@@ -48,3 +48,7 @@ def test_single_number():
 def test_ceil_sqrt():
     integer = 69420
     # assert math.ceil(math.sqrt(integer)) == sb.ceil_sqrt(integer)
+
+
+def test_double_string():
+    assert sb.double_string("pi") == "pipi"
