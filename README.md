@@ -17,6 +17,17 @@ software projects. Using Git, we can track the entire history of a
 software project, easily integrate new changes, and restore old versions
 of code if something goes wrong.
 
+Of course to use Git, we first need to install Git. Head over to the
+[Git website](https://git-scm.com/) and download the appropriate
+installer for your operating system. Once the installer finishes
+running, verify that everything worked by opening Git Bash (Windows)
+or a terminal (macOS or Linux) and run the following command:
+```
+git --version
+```
+If you get a current version number (at the time of writing, 2.42) and
+no errors, you're good to go!
+
 You'll also need to create a GitHub account and add it to the Waterloo
 Rocketry GitHub organization. Send your GitHub username to Ozayr, Kavin or 
 Jack once you've created it and we'll make sure you get added!
