@@ -25,7 +25,7 @@ or a terminal (macOS or Linux) and run the following command:
 ```
 git --version
 ```
-If you get a current version number (at the time of writing, 2.42) and
+If you get a current version number (at the time of writing, `2.42`) and
 no errors, you're good to go!
 
 You'll also need to create a GitHub account and add it to the Waterloo
@@ -47,7 +47,7 @@ recommended way for Windows users. For macOS users, the recommended way
 is to install [Homebrew](https://brew.sh/) and then install Python using 
 `brew install python`. If you use Linux, I'm assuming you already have 
 Python or can figure out how to install it yourself. In all cases, we 
-want to install the latest version (at the time of writing, *3.11*).
+want to install the latest version (at the time of writing, `3.11`).
 
 In most cases, working on a Python project means installing dependencies
 using `pip`. Pip is a tool for installing Python packages - software
@@ -84,19 +84,21 @@ Move to Part 3 once:
 
 It's time to actually write some code! Start by adding a new function to
 `functions.py`. You can take inspiration from the functions that are
-already there, or get creative. Just make sure your function will be
-easily unit-testable (it should have well-defined inputs and outputs).
-Please also add a [docstring](https://www.datacamp.com/community/tutorials/docstrings-python)
+already there, or get creative. Please also add a [docstring](https://www.datacamp.com/community/tutorials/docstrings-python)
 to your function; this is a comment that provides useful information
 about what your function does, what arguments it takes, and what values
 it returns. All of the functions in `functions.py` should already have
 docstrings, so you should be able to just follow the existing format.
 
-This repository also has an automatic formatting script, located in the
-`tools` folder. It uses autopep8 to deal with nitpicky formatting things
-like extra newlines and whitespace floating around. To use it, run
-`./format.sh` from the root of the repository - you'll generally want to 
-do this before each commit, or at least before making pull requests.
+This repository also has an automatic formatting script. It uses 
+autopep8 to deal with nitpicky formatting things like extra newlines 
+and whitespace floating around. To use it, run the following command
+from the root of the repo:
+```
+./format.sh
+```
+You'll generally want to do this before each commit, or at least before 
+making pull requests.
 
 Move to Part 4 once:
 - You've added a new function to `functions.py`
@@ -173,10 +175,6 @@ git push -u origin <branch-name>
 Once the first push has been made, Git maps your local branch to
 the remote branch on GitHub and you can just use `git push`.
 
-If you want to read more about Git pushing, checkout out Chapter
-[3.5](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) of
-the Git book.
-
 Now that GitHub has a copy of your branch, you can open a _pull request_
 (PR), which is a way of proposing new changes for merging. The people
 running the Git Tutorial wil walk you through the process of opening
@@ -201,7 +199,7 @@ Git is a very powerful and complicated software, and there are a lot of
 things that weren't covered in this onboarding. If you need a refresher or
 want to learn some more advanced features, the Internet is your friend. 
 Here are some great resources that might help you get started:
-- A great resource I used is this [lecture)](https://missing.csail.mit.edu/2020/version-control/) 
+- A great resource I used is this [lecture](https://missing.csail.mit.edu/2020/version-control/) 
 in MIT's Missing Semester class. It walks you through the underlying 
 structure of Git and some basic commands.
 - If you like learning interactively, try [Git-It](https://github.com/jlord/git-it-electron).
@@ -209,7 +207,5 @@ structure of Git and some basic commands.
 It's not as comprehensive as Git-It, but it runs in your browser and
 might be easier to get started with.
 - If you're a bit more adventurous, you can refer directly to the Git
-documentation. Chapter [1.5](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-will show you how to install Git, and Chapter [2.1](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
-has information on how to "clone" an existing repository.
+documentation book [Pro Git](https://git-scm.com/book/en/v2).
 
