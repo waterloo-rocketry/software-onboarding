@@ -166,8 +166,7 @@ repository on your feature branch, but you haven't yet uploaded the
 change to GitHub or merged it to the `master` branch.
 
 The first step is to _push_ a copy of your local branch up to GitHub.
-You can do this very easily by running the following command, replacing
-`branch_name` with the actual name of your branch:
+You can do this very easily by running the following command:
 ```
 git push -u origin <branch-name>
 ```
