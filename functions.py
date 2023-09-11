@@ -1,3 +1,8 @@
+# Add your own function at the bottom of the list
+# It can do whatever you want (probably something simple)
+# Make sure to add a good comment describing it as shown below
+
+
 def add_one(val):
     """
     Add one to a number.
@@ -188,3 +193,4 @@ def double_string(x: str) -> str:
     The original string appended to itself
     """
     return x + x
+
