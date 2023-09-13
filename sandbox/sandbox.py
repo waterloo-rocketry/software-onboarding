@@ -188,3 +188,18 @@ def double_string(x: str) -> str:
     The original string appended to itself
     """
     return x + x
+
+def mod_two(val):
+    """
+    Return the remainder after dividing by 2.
+
+    Parameters
+    ----------
+    val: number
+        The number that modulo 2 will be applide to.
+
+    Returns
+    -------
+    The number modulo two, which returns the remainder after dividing by 2.
+    """
+    return val % 2

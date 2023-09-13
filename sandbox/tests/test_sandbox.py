@@ -52,3 +52,8 @@ def test_ceil_sqrt():
 
 def test_double_string():
     assert sb.double_string("pi") == "pipi"
+
+
+def test_mod_two():
+    num = -5
+    assert sb.mod_two(num) == 1
