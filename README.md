@@ -14,11 +14,6 @@ like! The purpose of this repository is to provide an environment where
 you can experiment with and learn these tools without needing to learn
 everything about our team and our rocket at the same time.
 
-This tutorial is structured around a very small Python library called
-`sandbox`. By the end of the tutorial, you'll have added a new feature
-to `sandbox`, added a *unit test* to make sure that it works, and
-contributed your changes with a *pull request*.
-
 The Internet is full of great resources for learning all of these
 concepts, and we won't try to replicate all of them - so, instead of
 giving step-by-step instructions for each part of the tutorial, we
