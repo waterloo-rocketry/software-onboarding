@@ -32,10 +32,21 @@ You'll also need to create a GitHub account and add it to the Waterloo
 Rocketry GitHub organization. Send your GitHub username to Ozayr, Kavin or 
 Jack once you've created it and we'll make sure you get added!
 
+Now it's time to clone this repo so you have a local copy on your machine
+that you can edit. `cd` into the directory where you want this repo to 
+exit (I personally use `~/Documents/Rocketry/`). On the homepage for this
+repo on GitHub, click `Code` then copy the link under `Clone`> `SSH`. Then
+run the following command:
+```
+git clone <github-repo-link>
+```
+This should create a new folder called `software-onboarding` that contains
+the contents of this repo.
+
 Move to Part 2 once:
 - You have Git installed
-- You have a local clone of this repository
 - You've made a GitHub account and sent your username to an admin
+- You have a local clone of this repository
 
 ## Part 2: Install Dependencies
 
