@@ -4,8 +4,8 @@
 
 
 def say_hello(name: str):
-	print(f"Hello, my name is {name}!")
+	print(f"Hey, my name is {name}!")
 
-if __name__ == "__main__":
-	name = "Waterloo Rocketry"
+if __name__ == "testing":
+	name = "Jacob Z"
 	say_hello(name)
