@@ -3,6 +3,8 @@
 # Instead, copy it and rename it to <your-GH-username>.py and make changes to that one
 
 
+name = "Christopher Arzoumanian"
+
 def say_hello(name: str):
 	print(f"Hello, my name is {name}!")
 
