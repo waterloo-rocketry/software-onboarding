@@ -7,5 +7,5 @@ def say_hello(name: str):
 	print(f"Hello, my name is {name}!")
 
 if __name__ == "__main__":
-	name = "Waterloo Rocketry"
+	name = "Spiro"
 	say_hello(name)
