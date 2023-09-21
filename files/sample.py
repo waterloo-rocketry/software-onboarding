@@ -1,6 +1,9 @@
-# Sample Python file
-# DO NOT MAKE CHANGES DIRECTLY TO THIS FILE
-# Instead, copy it and rename it to <your-GH-username>.py and make changes to that one
+"""
+Name: Pranav Mahabal
+Date: 10/14/2021
+Title: sample.py
+Description: A simple python script that prints out the name of Walter White's alias.
+"""
 
 
 def say_my_name(name: str):
