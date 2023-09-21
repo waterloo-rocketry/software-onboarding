@@ -8,4 +8,4 @@ def say_hello(name: str):
 
 if __name__ == "__main__":
 	name = "Waterloo Rocketry"
-	say_hello(name)
+	say_hello("Michael Lee")
