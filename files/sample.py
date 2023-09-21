@@ -3,9 +3,9 @@
 # Instead, copy it and rename it to <your-GH-username>.py and make changes to that one
 
 
-def say_hello(name: str):
-	print(f"Hello, my name is {name}!")
+def say_my_name(name: str):
+	print(f"What's my name....... {name}!\n That's right, {name}!")
 
 if __name__ == "__main__":
-	name = "Waterloo Rocketry"
-	say_hello(name)
+	name = "Heisenberg"
+	say_my_name(name)
