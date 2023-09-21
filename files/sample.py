@@ -1,5 +1,5 @@
 # Sample Python file
-# DO NOT MAKE CHANGES DIRECTLY TO THIS FILE
+# DO NOT MAKE CHANGES DIRECTLY TO THIS FILE s
 # Instead, copy it and rename it to <your-GH-username>.py and make changes to that one
 
 
