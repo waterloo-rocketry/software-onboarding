@@ -91,15 +91,21 @@ Move to Part 3 once:
 
 ## Part 3: Making a Change
 
-**Objective**: Add a new function to `functions.py`.
+**Objective**: Create a new Python file.
 
-It's time to actually write some code! Start by adding a new function to
-`functions.py`. You can take inspiration from the functions that are
-already there, or get creative. Please also add a [docstring](https://www.datacamp.com/community/tutorials/docstrings-python)
-to your function; this is a comment that provides useful information
-about what your function does, what arguments it takes, and what values
-it returns. All of the functions in `functions.py` should already have
-docstrings, so you should be able to just follow the existing format.
+It's time to actually make a change! First, copy the sample Python
+file and rename it using your GitHub username (this is to avoid
+conflicts when everyone merges their changes at the end) by running:
+```
+cd files/
+cp sample.py <your-GH-username>.py
+```
+
+Now open up this file in your favourite text editor and change the 
+value of the `name` variable to your name. We've made this part very
+simple on purpose because the focus of this tutorial is using Git,
+not coding. Also make sure to delete the empty line at the bottom of
+the file (this will be useful for the next step).
 
 This repository also has an automatic formatting script. It uses 
 autopep8 to deal with nitpicky formatting things like extra newlines 
@@ -108,11 +114,13 @@ from the root of the repo:
 ```
 ./format.sh
 ```
-You'll generally want to do this before each commit, or at least before 
-making pull requests.
+You should see that the script has added an empty line at the bottom 
+of your file if there wasn't one there already. You'll generally want
+ to do this before each commit, or at least before making pull requests.
 
 Move to Part 4 once:
-- You've added a new function to `functions.py`
+- You've copied `sample.py` and renamed it
+- You've changed the function inside to print your name
 - You've run the formatting script
 
 ## Part 4: Commitment Issues
