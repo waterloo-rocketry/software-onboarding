@@ -3,7 +3,7 @@
 # Instead, copy it and rename it to <your-GH-username>.py and make changes to that one
 
 
-def say_hello(name: str):
+def say_hello(name: Tian):
 	print(f"Hello, my name is {name}!")
 
 if __name__ == "__main__":
