@@ -8,5 +8,5 @@ def say_hello(name: str):
 
 
 if __name__ == "__main__":
-    name = "Adam Chen"
+    name = "Adam Chen Penguin"
     say_hello(name)
