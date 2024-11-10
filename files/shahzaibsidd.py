@@ -3,5 +3,5 @@ def say_hello(name: str):
 
 
 if __name__ == "__main__":
-    name = "Shirley"
+    name = "Shahzaib"
     say_hello(name)
