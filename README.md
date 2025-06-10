@@ -2,13 +2,24 @@
 
 Welcome to the Waterloo Rocketry Software Subsystem!
 
-This repository is intended as a guide to learning Git and GitHub for
-new members who aren't familiar with these tools. It will be used as
-part of the Git Tutorial and you can revisit it later if you forget
-any steps of the process. After completing this onboarding task,
-you'll have set up Git, created a commit and opened a PR!
+This repository is intended to be a starting point for new team members
+who aren't necessarily familiar with software tools and practices like
+Git, GitHub, pull requests, and unit testing. If you're already familiar
+with all of those concepts, it probably won't take too long for you to
+work through this tutorial. If you haven't heard of or worked with one
+or more of those, or you just need a refresher, take as much time as you
+like! The purpose of this repository is to provide an environment where
+you can experiment with and learn these tools without needing to learn
+everything about our team and our rocket at the same time.
 
-## Part 1: Let's Git Started
+The Internet is full of great resources for learning all of these
+concepts, and we won't try to replicate all of them - so, instead of
+giving step-by-step instructions for each part of the tutorial, we
+focus on sharing resources that are much more comprehensive and
+in-depth. We want you to be able to pick and choose whichever resource
+you prefer and learn however you learn best.
+
+## Part I: Let's Git Started
 
 **Objective**: Set up Git locally and clone this repository.
 
